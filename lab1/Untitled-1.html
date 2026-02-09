@@ -1,43 +1,67 @@
 <html>
     <head>
-        <title> Лабораторная 1 </title>
-        <link type="Image/x-icon" href="/66936.png" rel="icon">
+        <meta charset="UTF-8"> <!-- кодировка символов (вообще без этого работает, но полагаю указывать надо, по крайней мере предосмотр в проводнике мне сказал спасибо)-->
 
+        <title> Лабораторная 1 </title>
+        <link type="Image/x-icon" href="/66936.png" rel="icon">  <!-- favicon - картинка, отображающаяся на вкладке рядом с title'ом -->
+        
         <style>
             body {
                 background-color: aliceblue;
             }
+             .title {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .btn {
+                cursor: pointer;
+            }
+            .btn-clear {
+                cursor: pointer;
+            }
+            .btn-delete {
+                cursor: pointer;
+            }
+            .task-label {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
         </style>
     </head>
     <body>
-        <h1> Список дел </h1>
+        <h1 class="title"> Список дел </h1>
         <input type="text" placeholder="Новый элемент списка"/>  
-        <button>Создать</button>
-        <button>Очистить всё</button>
-        <ol>
-            <li>
-                <label>
-                    <input type="checkbox"> Почесать кошку 
+        <button class="btn">Создать</button>
+        <button class="btn-clear">Очистить всё</button>
+        <ol> <!-- <ol> (ordered list) - нумерованный список -->
+            <li> <!-- <li> (list item) элемент списка-->
+                <label class="task-label">
+                    <input type="checkbox"> 
+                    Почесать кошку 
                 </label> 
-                <sub> от 24.08.2023</sub> 
-                <button>❌</button>
+                <sub> от 24.08.2023</sub> <!-- <sub> (subscript)- нижний регистр, верхний - <sup> (superscript)-->
+                <button class="btn-delete">❌</button>
             </li>
             <li>
-                <label>
-                    <input type="checkbox"> Полить картошку 
+                <label class="task-label">
+                    <input type="checkbox"> 
+                    Полить картошку 
                 </label> 
                 <sub> от 04.05.2022</sub> 
-                <button>❌</button>
+                <button class="btn-delete">❌</button>
             </li>
             <li>
-                <label>
-                    <input type="checkbox"> Сложить в лукошко 
+                <label class="task-label">
+                    <input type="checkbox"> 
+                    Сложить в лукошко 
                 </label> 
                 <sub> от 14.05.2022</sub> 
-                <button>❌</button>
+                <button class="btn-delete">❌</button>
             </li>
         </ol>
     </body>
 
-    <footer> <hr>Copyright ©</footer>
+    <footer> <!-- (footer, «подвал») - нижняя часть веб-страницы, которая содержит служебную, вспомогательную и контактную информацию, такую как авторские права, ссылки на разделы сайта, контакты, политика конфиденциальности и социальные сети, оформляется тегом-->
+        <hr> <!--<hr> - горизонтальная линия-->
+        Copyright © <!-- © - это символ авторского права (copyright)-->
+    </footer> 
 </html>
