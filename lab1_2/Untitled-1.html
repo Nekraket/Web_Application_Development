@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Лабораторная 1_2 </title>
+        <style>
+            ul {
+                list-style-type: disc;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Заполните обязательные поля, чтобы добавить данные в таблицу</p>
+            <label>
+                Тип камушков: 
+                <select>
+                    <option>сапфиры</option>
+                    <option>рубины</option>
+                    <option>алмазы</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>
+            Год: 
+            <input type="date" />
+            ✅
+        </label>
+        </div>
+        <div>
+            <label>
+            Количество: 
+            <input type="text" />
+            ❌
+        </label>
+        </div>
+        
+        <button>Отправить</button>
+        
+        <table border="1" width="60%"> <!--без бордера по умолчании не отображает границы-->
+            
+            <caption>Добыча драгоценных камней</caption> <!--заголовок таблицы-->
+            
+            <tr>
+                <th rowspan="2">Камушек</th>
+                <th colspan="3">Год</th>
+
+                <tr>
+                    <th>2010</th>
+                    <th>2012</th>
+                    <th>2014</th>
+                </tr>
+            </tr>
+            <tr>
+                <td>Сапфиры</td>
+                <td rowspan="2">1483</td>
+                <td>4532</td>
+                <td>6743</td>
+            </tr>
+            <tr>
+                <td>Рубины</td>
+                <td>3835</td>
+                <td>7482</td>
+            </tr>
+            <tr>
+                <td>Алмазы</td>
+                <td>683</td>
+                <td colspan="2" align="center">238</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Итого: много миллионов
+                    <ol type="I">
+                        <li>
+                            Итого по видам драгоценных камней: много тысяч
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank">Сапфиров</a> немыслемое количество
+                                </li>
+                                <li>
+                                    Но <a href="" target="_blank">рубинов</a> под конец всё же больше
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Итого по полудрагоценным камням
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank">Изумрудов</a> 0
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">Топазов</a> 0
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">Опалов</a> 0
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
