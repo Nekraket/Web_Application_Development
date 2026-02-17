@@ -14,13 +14,18 @@
             table {
                 border-collapse: collapse; /*Чтобы границы были одинарными, а не двойными*/
             }
-            tr,td {
+            div{
+                border-width:1px;
+                border-style: solid;
                 padding : 25px;
+                width: 80%;
+                margin: 0 auto;
+                box-sizing: border-box;
             }
         </style>
     </head>
     <body>
-        <div>
+        <label>
             <h1>ПУТЕШЕСТВИЯ</h1>
             навигация по блокам с якорями
 
@@ -34,96 +39,47 @@
             <a href="#faq">7</a>
             <a href="#contacts">8</a>
             
+        </label>
+        <br><br><br> <!-- тройной отсуп для красоты(перенос строки)-->
+
+        <div id="country">
+            <h2>НАЗВАНИЕ СТРАНЫ</h2>
+            <p>блок &ltheader&gt</p> <!--чтобы <> как обычный текст, а не тег - &lt(<) и &gt;(>)-->
+            <p>стили для заголовков h1,h2,h3</p>
         </div>
-        <br><br> <!-- двойной отсуп для красоты(перенос строки)-->
-        <div align="center">
-            <table border="1" width="70%">
-                <tr>
-                    <td>
-                        <div id="country">
-                            <h2>НАЗВАНИЕ СТРАНЫ</h2>
-                            <div>блок &ltheader&gt</div> <!--чтобы <> как обычный текст, а не тег - &lt(<) и &gt;(>)-->
-                            <br>
-                            <div>стили для заголовков h1,h2,h3</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="map">
-                            <h2>Карта региона</h2>
-                            <div>Кликабильное svg-изображение с возможностью выбора</div>
-                            <br>
-                            <div>+ анимация + мобилка</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="description">
-                            <h2>Описание</h2>
-                            <div>Красиво оформленный текст</div>
-                            <br>
-                            <div>Стиль для блока с текстом</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="weather">
-                            <h2>Погода</h2>
-                            <div>желательно на карте, либо прогноз по регионам/городам</div>
-                            <br>
-                            <div>блок с min-height</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="about_us">
-                            <h2>О нас/о стране</h2>
-                            <div>блок с цифрами, тезисно</div>
-                            <br>
-                            <div>стили с display:flex</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="questions">
-                            <h2>Форма обратной связи/Задать вопрос</h2>
-                            <div>форма для ввода и отправки текста</div>
-                            <br>
-                            <div>стили элементов управления</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="faq">
-                            <h2>FAQ</h2>
-                            <div>раскрывающие поля</div>
-                            <br>
-                            <div>обработка раскрывашек</div>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div id="contacts">
-                            <h2>Контакты</h2>
-                        <div>блок &ltfooter&gt</div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div id="map">
+            <h2>Карта региона</h2>
+            <p>Кликабильное svg-изображение с возможностью выбора</p>
+            <p>+ анимация + мобилка</p>
+        </div>
+        <div id="description">
+            <h2>Описание</h2>
+            <p>Красиво оформленный текст</p>
+            <p>Стиль для блока с текстом</p>
+        </div>
+        <div id="weather">
+            <h2>Погода</h2>
+            <p>желательно на карте, либо прогноз по регионам/городам</p>
+            <p>блок с min-height</p>
+        </div>
+        <div id="about_us">
+            <h2>О нас/о стране</h2>
+            <p>блок с цифрами, тезисно</p>
+            <p>стили с display:flex</p>
+        </div>
+        <div id="questions">
+            <h2>Форма обратной связи/Задать вопрос</h2>
+            <p>форма для ввода и отправки текста</p>
+            <p>стили элементов управления</p>
+        </div>
+        <div id="faq">
+            <h2>FAQ</h2>
+            <p>раскрывающие поля</p>
+            <p>обработка раскрывашек</p>
+        </div>
+        <div id="contacts">
+            <h2>Контакты</h2>
+            <p>блок &ltfooter&gt</p>
         </div>
     </body>
 </html>
