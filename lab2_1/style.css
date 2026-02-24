@@ -15,7 +15,7 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--dark_green);
     background-image: url('https://images.ctfassets.net/hrltx12pl8hq/2RwJp3f9UiCnfWBEunwxOQ/f11257994853124d7b1a6a935e678c13/0_hero.webp');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -61,6 +61,7 @@ input[type="text"] {
     padding: 15px;
     border: none;
     outline: none;
+    min-width: 350px;
 }
 
 
@@ -70,6 +71,7 @@ form button {
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
 }
 .btn {
     background-color: var(--grey);
@@ -89,6 +91,7 @@ form button {
 .todo-container {
     max-width: 600px;
     width: 100%;
+    flex: 1;
 }
 
 /* Список */
@@ -173,12 +176,14 @@ li:has(input[type="checkbox"]:checked) {
     /*transform: rotate(100000000000000000deg);*/            /*просто прикол */
     /* transform: translateX(100px); */
     transform: scale(1.4);
-    color: var(--dark_grey);
 }
 
 /* Если чекбокс отмечен, кнопка удаления становится белой */
 li:has(input[type="checkbox"]:checked) .btn-delete {
     color: white;
+}
+li:hover  .btn-delete{
+    color: var(--dark_grey);
 }
 
 
@@ -188,6 +193,12 @@ footer {
     color: white;
     width: 100%;
     margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* ← чтобы был поверх других элементов */
+    background-color: var(--dark_green);
 }
 
 footer hr {
@@ -212,9 +223,13 @@ ol:empty + .empty-message {
 
 
 /* Адаптивность */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     form {
-        flex-direction: column;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
     }
     
     .header-icon {
