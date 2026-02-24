@@ -218,12 +218,10 @@ ol:empty + .empty-message {
     
     input[type="text"] {
         width: 100%;
-        border-right: 2px solid var(--light-green);
     }
     
     .btn, .btn-clear {
         width: 100%;
-        border-left: 2px solid var(--light-green);
     }
     
     .header-icon {
