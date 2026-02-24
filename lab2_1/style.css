@@ -210,7 +210,7 @@ ol:empty + .empty-message {
 }
 
 
-/* Адаптивность(??????) */
+/* Адаптивность */
 @media (max-width: 500px) {
     form {
         flex-direction: column;
