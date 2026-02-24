@@ -170,7 +170,8 @@ li:has(input[type="checkbox"]:checked) {
     font-size: 24px;
 }
 .btn-delete:hover {
-    transform: rotate(90deg);
+    /* transform: rotate(10000deg); */           /*просто прикол */
+    transform: scale(1.4);
     color: var(--dark_grey);
 }
 
