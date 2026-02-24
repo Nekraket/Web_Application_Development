@@ -135,7 +135,6 @@ sub { /* Дата */
 input[type="checkbox"] {
     appearance: none;
     outline: none;
-
     width: 20px;
     height: 20px;
 }
@@ -171,7 +170,8 @@ li:has(input[type="checkbox"]:checked) {
     font-size: 24px;
 }
 .btn-delete:hover {
-    /* transform: rotate(10000deg); */           /*просто прикол */
+    /*transform: rotate(100000000000000000deg);*/            /*просто прикол */
+    /* transform: translateX(100px); */
     transform: scale(1.4);
     color: var(--dark_grey);
 }
@@ -215,14 +215,6 @@ ol:empty + .empty-message {
 @media (max-width: 500px) {
     form {
         flex-direction: column;
-    }
-    
-    input[type="text"] {
-        width: 100%;
-    }
-    
-    .btn, .btn-clear {
-        width: 100%;
     }
     
     .header-icon {
