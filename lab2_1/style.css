@@ -14,7 +14,7 @@
 body {
     font-family: Roboto, sans-serif;
     background-color: var(--dark_green);
-    /* background-image: url('https://images.ctfassets.net/hrltx12pl8hq/2RwJp3f9UiCnfWBEunwxOQ/f11257994853124d7b1a6a935e678c13/0_hero.webp'); */
+    background-image: url('https://images.ctfassets.net/hrltx12pl8hq/2RwJp3f9UiCnfWBEunwxOQ/f11257994853124d7b1a6a935e678c13/0_hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     margin: 0;
+    overflow: hidden;
 }
 
 
