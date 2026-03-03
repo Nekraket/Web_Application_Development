@@ -28,6 +28,7 @@ h2 {
 h3 {
     color: rgb(65, 65, 65);
     font-weight: bold;
+    margin: 0;
 }
 p {
     font-size: 18px;
@@ -39,10 +40,8 @@ p {
 div {
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
     margin: 20px auto;
     box-sizing: border-box;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -64,7 +63,7 @@ div {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 10px;
 }
 .content-row img {
@@ -73,6 +72,7 @@ div {
     height: 85%;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -88,6 +88,7 @@ div {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 .none a {
     align-self: center;
@@ -128,10 +129,46 @@ div a:hover {
 }
 
 
+/* Стили для кнопок регионов */
+.region-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;   
+}
+
+.region-btn {
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    color: #444444;
+    background-color: #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.region-btn:hover {
+    background-color: rgb(255, 107, 107);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Активный регион*/
+.region-btn.active {
+    background-color: rgb(255, 107, 107);
+    color: white;
+}
+
+
 .footer {
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto 20px;
+    margin: 0;
     padding: 20px;
     background-color: #333333;
     color: #6e6e6e;
@@ -142,4 +179,176 @@ div a:hover {
 }
 .footer h3 {
     color: #ff6a69;
+}
+
+
+/* Стили для FAQ */
+.faq-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Вопрос (summary) */
+.faq-question {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 16px 50px 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    list-style: none; /* Убирает стандартную стрелку */
+}
+
+.faq-question::marker {
+    display: none;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+/* Плюсик справа */
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: #444;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.faq-question:hover::after {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.faq-item[open] .faq-question::after {
+    content: '–';
+}
+
+
+
+
+/* Стили для блока "Наши моменты" */
+.moments-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 50px;
+    padding: 0;
+}
+
+.moments-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+}
+
+.moments-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Стили для блока "Отзывы" */
+.reviews-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.2s ease;
+    align-items: flex-start;
+}
+
+.review-item:hover {
+    transform: scale(1.03);
+}
+
+/* Контейнер: аватарка + имя/тур — в строку */
+.review-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+}
+
+.review-text h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+.review-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.review-content {
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
 }
