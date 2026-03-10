@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -101,7 +100,7 @@ p {
     width: 100%;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -148,8 +147,7 @@ p {
     width: 100%;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover{
     color: #ff6a69;
 }
 
@@ -522,14 +520,6 @@ p {
     margin: 0 0 10px 0;
 }
 
-/* Защита от вылезающих изображений */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
 /* Карусель */
 .carousel-slider {
     position: relative;
@@ -625,7 +615,7 @@ img {
 
 
 
-/* Анимация повышения резкости для всех изображений (кроме фоновых) */
+/* Анимация повышения резкости для всех изображений (кроме фонового) */
 .content-row img,
 .tour-card img,
 .review-avatar,
