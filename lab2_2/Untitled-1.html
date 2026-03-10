@@ -5,46 +5,148 @@
         <link type="text/css" href="style.css" rel="stylesheet">
     </head>
     <body>
+        <nav class="main-nav">
+            <label class="logo">
+                <span style="color: black;">Travel</span><span style="color: red;">World</span>
+            </label>
+
+            <div class="nav-links">
+                <a href="#about_us" class="nav-link">О нас</a>
+                <a href="#popular" class="nav-link">Направления</a>
+                <a href="#tour" class="nav-link">Туры</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </div>
+        </nav>
+
         <div class="none">
             <h1>Откройте мир с TravelWorld</h1>
             <p>Путешествия, которые вы никогда не забудете</p>
-            <a href="#tour">Выбрать тур</a>
+            <a href="#tour" class="btn-primary">Выбрать тур</a>
         </div>
 
         <div id="about_us" class="section">
-            <h2>О нашем агентстве</h2>
-            <div class="content-row">
-                <div class="text-column">
-                    <h3>Мы создаём незабываемые впечатления</h3>
-                    <p>TravelWorld — это команда профессиональных путешественников,
-                        которая уже более 15 лет помогает людям открывать для себя новые
-                        страны и культуры. Мы тщательно отбираем каждый тур и
-                        направление, чтобы обеспечить вам максимальный комфорт и
-                        безопасность во время путешествия.</p>
-                    <p>Наша философия — индивидуальный подход к каждому клиенту. Мы
-                        не просто продаём туры, мы создаём уникальные маршруты, которые
-                        соответствуют вашим интересам, бюджету и предпочтениям.</p>
-                    <a href="#contacts">Связаться с нами</a>
+            <div class="container">
+                <h2>О нашем агентстве</h2>
+                <div class="content-row">
+                    <div class="text-column">
+                        <h3>Мы создаём незабываемые впечатления</h3>
+                        <p>TravelWorld — это команда профессиональных путешественников,
+                            которая уже более 15 лет помогает людям открывать для себя новые
+                            страны и культуры. Мы тщательно отбираем каждый тур и
+                            направление, чтобы обеспечить вам максимальный комфорт и
+                            безопасность во время путешествия.</p>
+                        <p>Наша философия — индивидуальный подход к каждому клиенту. Мы
+                            не просто продаём туры, мы создаём уникальные маршруты, которые
+                            соответствуют вашим интересам, бюджету и предпочтениям.</p>
+                        <div style="text-align: left;">
+                            <a href="#contacts" class="btn-primary">Связаться с нами</a>
+                        </div>
+                    </div>
+                    <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Путешествие">
                 </div>
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Путешествие">
             </div>
         </div>
 
         <div id="best" class="section">
             <h2>Наши лучшие предложения</h2>
-            <p>dgf</p>
-            
+            <div class="carousel-slider">
+
+            </div>
         </div>
 
         <div id="popular" class="section">
             <h2>Популярные направления</h2>
-            <p>zhfd</p>
-            
+            <div class="tours-container">
+                <div class="tour-card">
+                    <img src="https://www.amigo-s.ru/content-images/2e1e5e37eec40c7f470cd603b163b258.jpg" alt="Тур по Европе">
+                    <div class="content">
+                        <h3>Будапешт, Венгрия</h3>
+                        <p>Будапешт - это мосты, дворцы и
+                            термальные купальни, многие из которых
+                            расположились в фантастически красивых
+                            зданиях (взять хотя бы Геллерт или Сечени).</p>
+                        <div class="tour-info">
+                            <span class="tour-price-popular">от $1200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="https://www.10mest.com/photos/france-paris-eiffel-tower-and-trocadero-gardens-1280x720.webp" alt="Тур по Европе">
+                    <div class="content">
+                        <h3>Париж, Франция</h3>
+                        <p>Город любви, искусства и изысканной кухни.
+                            Эйфелева башня, Лувр и уютные кафе.</p>
+                        <div class="tour-info">
+                            <span class="tour-price-popular">от $950</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="https://wikiway.com/upload/hl-photo/86e/169/new-york_1.jpg" alt="Тур по Европе">
+                    <div class="content">
+                        <h3>Нью-Йорк</h3>
+                        <p>Город, который никогда не спит. Таймс-
+                            сквер, Центральный парк и Статуя Свободы.</p>
+                        <div class="tour-info">
+                            <span class="tour-price-popular">от $1500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="tour" class="section">
             <h2>Наши туры</h2>
-            <p>zdgdgfd</p>
+            <div class="tours-container">
+                <div class="tour-card">
+                    <img src="https://kochevnik.kg/wp-content/uploads/2019/05/ropa805-1024x358.jpg" alt="Тур по Европе">
+                    <div class="content">
+                        <h3>Гранд тур по Европе</h3>
+                        <p>14-дневный тур по 5 странам: Франция,
+                            Германия, Австрия, Италия и Швейцария.
+                            Включены все переезды, проживание в
+                            отелях 4* и экскурсии с профессиональными
+                            гидами.</p>
+                        <div class="tour-info">
+                            <span class="tour-price">$2500</span>
+                            <button class="btn-book">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="https://www.airpano.ru/files/vr-rio-full_big.jpg" alt="Отдых на Мальдивах">
+                    <div class="content">
+                        <h3>Рио-де-Жанейро, Бразилия</h3>
+                        <p>Скалистые горы, зелёные холмы и
+                            живописные лагуны создают захватывающие
+                            панорамы, которые хочется запомнить и
+                            фотографировать</p>
+                        <div class="tour-info">
+                            <span class="tour-price">$3200</span>
+                            <button class="btn-book">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="https://www.datocms-assets.com/159851/1764851012-shutterstock_2584579263.jpg?fm=pjpg&w=1600" alt="Экскурсия по Японии">
+                    <div class="content">
+                        <h3>Япония: традиции и современность</h3>
+                        <p>12-дневный тур по Токио, Киото, Осака и
+                            Хиросима. Чайные церемонии, самурайские
+                            замки, суши-мастер-классы и
+                            высокоскоростные поезда.</p>
+                        <div class="tour-info">
+                            <span class="tour-price">$2800</span>
+                            <button class="btn-book">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="reviews" class="section">
@@ -53,7 +155,7 @@
                 <div class="review-item">
                     <div class="review-text">
                         <div class="review-header">
-                            <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Аватар Марии Ивановой" class="review-avatar">
+                            <img src="https://i.pinimg.com/736x/90/d4/bd/90d4bd8dd91c591efd58ed99998af2a7.jpg" alt="Аватар Марии Ивановой" class="review-avatar">
                             <div class="review-text">
                                 <h3>Мария Иванова</h3>
                                 <p>Тур по Италии, май 2025</p>
@@ -71,7 +173,7 @@
                 <div class="review-item">
                     <div class="review-text">
                         <div class="review-header">
-                            <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Аватар Алексея Петрова" class="review-avatar">
+                            <img src="https://i.pinimg.com/236x/4f/dd/4a/4fdd4a2260965c1ba24073ca389e0b49.jpg" alt="Аватар Алексея Петрова" class="review-avatar">
                             <div class="review-text">
                                 <h3>Алексей Петров</h3>
                                 <p>Отдых на Мальдивах, январь 2025</p>
@@ -89,7 +191,7 @@
                 <div class="review-item">
                     <div class="review-text">
                         <div class="review-header">
-                            <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Аватар Елены Смирновой" class="review-avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQYBtwdF5oBGCEtJbAIzckUTZfCogQ5seiIQ&s" alt="Аватар Елены Смирновой" class="review-avatar">
                             <div class="review-text">
                                 <h3>Елена Смирнова</h3>
                                 <p>Экскурсионный тур по Японии, апрель 2025</p>
@@ -107,14 +209,16 @@
         </div>
 
         <div id="moments" class="section">
-            <h2>Наши моменты</h2>
-            <div class="moments-grid">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
-                <img src="https://aerotur.travel/storage/app/media/uploaded-files/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Момент путешествия">
+            <div class="container">
+                <h2>Наши моменты</h2>
+                <div class="moments-grid">
+                    <img src="https://bestvietnam.ru/wp-content/uploads/2020/02/%D0%B4%D0%B5%D0%B2%D1%83%D1%88%D0%BA%D0%B8.jpg" alt="Момент путешествия">
+                    <img src="https://tour-poisk.com/uploads/posts/2019-03/1552329126_pochemu-puteshestviya-delayut-nas-schastlivee.jpg" alt="Момент путешествия">
+                    <img src="https://www.snta.ru/upload/iblock/081/081fe201e9a3fcff944be4e607f845db.jpg" alt="Момент путешествия">
+                    <img src="https://stoneforest.ru/wp-content/uploads/2018/04/adventures-1.jpg" alt="Момент путешествия">
+                    <img src="https://img.championat.com/news/big/v/r/na-kraju-zemli-10-neobychnyh-idej-dlja-puteshestvija_1517331980822771222.jpg" alt="Момент путешествия">
+                    <img src="https://static.tildacdn.com/tild6663-3165-4363-b235-636266326536/_.jpg" alt="Момент путешествия">
+                </div>
             </div>
         </div>
 
@@ -155,25 +259,27 @@
         </div>
 
         <div id="contacts" class="section">
-            <h2>Наши контакты</h2>
-            <div class="content-row">
-                <div class="text-column">
-                    <h3>Свяжитесь с нами</h3>
-                    <p>г. Москва, ул. Тверская, д. 10, офис 45</p>
-                    <p>+7 (495) 123-45-67</p>
-                    <p>info@travelworld.ru</p>
-                    <p>Пн-Пт: 10:00 - 20:00<br/>
-                        Сб-Вс: 11:00 - 18:00
-                    </p>
+            <div class="container">
+                <h2>Наши контакты</h2>
+                <div class="content-row">
+                    <div class="text-column">
+                        <h3>Свяжитесь с нами</h3>
+                        <p>г. Москва, ул. Тверская, д. 10, офис 45</p>
+                        <p>+7 (495) 123-45-67</p>
+                        <p>info@travelworld.ru</p>
+                        <p>Пн-Пт: 10:00 - 20:00<br/>
+                            Сб-Вс: 11:00 - 18:00
+                        </p>
 
-                    <div class="region-buttons">
-                        <span class="region-btn active">Европа</span>
-                        <span class="region-btn">Азия</span>
-                        <span class="region-btn">Америка</span>
-                        <span class="region-btn">Африка</span>
+                        <div class="region-buttons">
+                            <span class="region-btn active">Европа</span>
+                            <span class="region-btn">Азия</span>
+                            <span class="region-btn">Америка</span>
+                            <span class="region-btn">Африка</span>
+                        </div>
                     </div>
+                    <img src="map.png" alt="Карта расположения">
                 </div>
-                <img src="map.png" alt="Карта расположения">
             </div>
         </div>
 
