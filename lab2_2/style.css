@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Предотвращает случайную горизонтальную прокрутку */
+    overflow-x: hidden;
 }
 
 body {
@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 72px; /* Исправлено: добавлено 'px' */
+    font-size: 72px;
 }
 
 h2 {
@@ -221,7 +221,7 @@ p {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Защита от переполнения */
+    max-width: 100%;
 }
 
 /* Кнопки регионов */
@@ -578,7 +578,7 @@ img {
     text-align: center;
     opacity: 0.95;
     backdrop-filter: blur(2px);
-    gap: 6px; /* Отступ между заголовком и текстом */
+    gap: 6px;
 }
 
 .slide-caption h3 {
@@ -621,4 +621,27 @@ img {
     100% {
         opacity: 0;
     }
+}
+
+
+
+/* Анимация повышения резкости для всех изображений (кроме фоновых) */
+.content-row img,
+.tour-card img,
+.review-avatar,
+.moments-grid img,
+.carousel-img,
+.region-btn img {
+    transition: filter 0.4s ease;
+    backface-visibility: hidden;
+    filter: contrast(1) brightness(1); 
+}
+
+.content-row img:hover,
+.tour-card img:hover,
+.review-avatar:hover,
+.moments-grid img:hover,
+.carousel-img:hover,
+.region-btn img:hover {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
 }
