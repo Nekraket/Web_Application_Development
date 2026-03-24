@@ -39,7 +39,7 @@ function task3()
     {
         result += i + " ";
     }
-    document.getElementById("result").textContent = result.trim();
+    document.getElementById("result").textContent = result;
 }
 
 // Задание 4: Заменить цикл for на while
