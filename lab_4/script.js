@@ -12,6 +12,7 @@ function task1() {
     admin = name;
 
     document.getElementById("result").textContent = admin;
+    alert(admin)
 }
 
 // Задание 2: Исправить сложение
@@ -23,6 +24,7 @@ function task2() {
     let sum = Number(a) + Number(b);
 
     document.getElementById("result").textContent = sum;
+    alert(sum)
 }
 
 // Задание 3: Чётные числа от 2 до 10
@@ -65,7 +67,13 @@ function task5() {
 // Задание 6: Простые числа от 2 до n
 function task6() {
     clearResult();
-    const n = 10;
+    let input = prompt("Введите число n (поиск простых чисел от 2 до n):", "10");
+    if (input === null) {
+        document.getElementById("result").textContent = "Ввод отменён.";
+        return;
+    }
+
+    const n = Number(input);
     let primes = [];
 
     for (let i = 2; i <= n; i++) {
