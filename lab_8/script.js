@@ -150,7 +150,7 @@ async function loadJson(url) {
     }
 }
 
-async function getFirstRepoAsync() {
+async function getGithubUser() {
     let name = document.getElementById("githubUserInput").value.trim() || "Nekraket";
 
     while (true) {
