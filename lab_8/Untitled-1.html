@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Лабораторная 8</title>
+        <script src="script.js"></script>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            button { margin: 5px; padding: 8px 12px; cursor: pointer; }
+        </style>
+    </head>
+    <body>
+        <h2>Лабораторная работа №8</h2>
+        <p>Выберите задание:</p>
+
+        <h3>Часть 1. Асинхронность, таймеры, промисы</h3>
+        <p><strong>Задача 1 (таймеры):</strong></p>
+        <input type="number" id="counterInput" placeholder="Введите N" value="5">
+        <button onclick="startCounter()">start()</button>
+        <button onclick="pauseCounter()">pause()</button>
+        <button onclick="stopCounter()">stop()</button>
+
+        <p><strong>Задача 2–3 (промисы / async):</strong></p>
+        <input type="number" id="delayInput" placeholder="Секунды задержки" value="3">
+        <button onclick="runDelayedCounter()">Запустить счётчик через delay()</button>
+
+        <input type="text" id="githubUserInput" placeholder="Имя пользователя GitHub" value="Nekraket">
+        <button onclick="getFirstRepo()">Получить первый репозиторий</button>
+        <button onclick="getFirstRepoAsync()">[async] Получить первый репозиторий</button>
+
+
+        <p>Результат:
+            <span id="result"></span>
+        </p>
+    </body>
+</html>
